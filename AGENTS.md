@@ -2,153 +2,124 @@
 
 Instructions for AI agents working on homgorn.github.io
 
-## IMPORTANT CONTEXT
-
-### Owner Details (ALWAYS use these)
-- **Name**: Leinid D (NOT "Гончаров", NOT "Goncharov")
+## OWNER INFO (ALWAYS USE THESE)
+- **Name**: Leinid D (NOT "Гончаров", NOT "Goncharov", NOT "М.")
 - **Email**: refertur.net@gmail.com
-- **WhatsApp**: +7 705 438 4888 (format +7 XXX XXX XXXX)
+- **WhatsApp**: +7 705 438 4888 (format: https://wa.me/77054384888)
 - **Telegram**: @notview
 - **Experience**: 10+ years, 100+ projects
 
-### Technical Stack
-- **Stack**: Static HTML + CSS (NOT Jekyll collections!)
+## TECHNICAL STACK
+- **Stack**: Static HTML + CSS (NOT Jekyll!)
 - **Hosting**: GitHub Pages
 - **Live URL**: https://homgorn.github.io
 
-### Key Technical Notes
-1. DO NOT use Jekyll collections - causes build failures on GitHub Pages
-2. Keep `.html` extension in URLs
-3. Custom CSS may be overridden by GitHub theme - test on live site
+## IMPORTANT RULES
 
----
+### DO NOT USE
+- Jekyll collections - causes build failures
+- Wrong name "Гончаров" or "Goncharov"
 
-## SEO METADATA RULES
-
-### Frontmatter Template
+### SEO METADATA
 ```yaml
 ---
 layout: default
 title: [Page Title] | Leinid D
-description: [150-160 characters. What the page offers.]
-keywords: [comma-separated keywords]
+description: [150-160 characters]
+keywords: [comma-separated]
 author: Leinid D
 lang: ru
 ---
 ```
 
-### IMPORTANT
-- **ONLY ONE `<h1>` per page** - never use page.title AND manual h1 together
-- Set `page.title` for browser tab only
-- Add manual `<h1>...</h1>` for content
-- Use `lang: ru` (NOT en-US)
-- Include canonical URL in layout
-- Include Schema.org Person in layout
+### ONE H1 RULE
+Only ONE `<h1>` per page - never use page.title AND manual h1 together
 
-### Example Correct Page
-```html
----
-layout: default
-title: Веб-разработка | Leinid D
-description: Услуги веб-разработки на WordPress. Опыт 10+ лет.
-keywords: WordPress, сайт, магазин
-author: Leinid D
----
+## FILE STRUCTURE
 
-<div class="container">
-  <section class="page-title">
-    <h1>Веб-разработка</h1>  <!-- only ONE h1 -->
-    <p>Сайты на WordPress</p>
-  </section>
-  ...
-</div>
-```
+### Categories: `/category/[name].html`
+- web-development.html
+- seo-optimization.html
+- ai-services.html
+- business-automation.html
+- marketing-advertising.html
+- import-export.html
+- security-protection.html
+- content-creation.html
 
----
+### English: `/en/category/[name].html`
 
-## FILE NAMING
+## SERVICE CARD TEMPLATE
 
-- Categories: `/category/[name].html`
-- Service pages: `/services.html`
-- Static pages: `/about.html`, `/contacts.html`
-- Layouts: `/_layouts/default.html`
-- Styles: `/assets/css/style.css`
-
----
-
-## WORKING WITH THIS PROJECT
-
-### Creating New Category Page
-1. Create `/category/[name].html`
-2. Include frontmatter with SEO metadata
-3. Use layout: default
-4. Add ONE h1 heading
-5. Include service cards with prices in rubles (₽)
-6. Link to WhatsApp: `https://wa.me/77054384888`
-
-### Creating Service Card
 ```html
 <article class="service-card">
   <h3>[Service Name]</h3>
-  <p>[Description 50-100 words]</p>
+  <p>[Description 50-100 words - VERY IMPORTANT!]</p>
   <span class="price">[Price in rubles]</span>
   <a href="https://wa.me/77054384888" class="order-btn">Заказать</a>
 </article>
 ```
 
-### Updating Existing Page
-1. Read the file first
-2. Make changes
-3. Keep all SEO frontmatter
-4. Maintain single h1 rule
+## HEADER NAVIGATION (RU)
+```html
+<nav class="nav">
+  <a href="/">Главная</a>
+  <a href="/services.html">Услуги</a>
+  <a href="/blog/">Блог</a>
+  <a href="https://wa.me/77054384888">Контакты</a>
+  <a href="/en/">EN</a>
+</nav>
+```
 
----
+## FOOTER (PLAIN TEXT, NOT ANCHORS!)
+```html
+<footer class="footer">
+  <p>© 2026 Leinid D. Все права защищены.</p>
+  <p>WhatsApp: +7 705 438 4888</p>
+  <p>Email: refertur.net@gmail.com</p>
+  <p>Telegram: @notview</p>
+</footer>
+```
 
-## COMMON MISTAKES TO AVOID
+## ADDING NEW SERVICE
 
-1. **Using Jekyll collections** - will break build
-2. **Adding extra h1** - SEO penalty
-3. **Using wrong name** - "Goncharov" or "Гончаров" instead of "Leinid D"
-4. **Missing lang** - must be "ru"
-5. **Missing canonical** - required for SEO
-6. **Using Pages CMS with Jekyll** - causes conflicts
-
----
-
-## DEPLOYMENT
-
-Site deploys automatically on push to main branch. Check live site after commit.
-
----
-
-## ADDING NEW SERVICES
-
-### When adding new service to category:
-1. Add service-card to RU category file
-2. Add service-card to EN category file  
+1. Add service-card to RU category file (50-100 words description!)
+2. Add service-card to EN category file
 3. Update sitemap.html (RU and EN)
 4. Update sitemap.xml with new URL
-5. Update category list in index.html (if new category)
+5. Add related-services links
 
-### Service card template:
+## ADDING NEW BLOG POST
+
+1. Create /blog/[slug].html (RU)
+2. Create /en/blog/[slug].html (EN)
+3. Add Schema.org Article
+4. Add related-posts at bottom
+5. Update feed.xml
+6. Update sitemap.xml
+
+## FAQ SCHEMA TEMPLATE
 ```html
-<article class="service-card">
-  <h3>[Service Name]</h3>
-  <p>[Description 50-100 words]</p>
-  <span class="price">[Price in rubles]</span>
-  <a href="https://wa.me/77054384888" class="order-btn">Заказать</a>
-</article>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Question?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Answer."
+      }
+    }
+  ]
+}
+</script>
 ```
 
-### Files to update:
-- category/[name].html (RU)
-- en/category/[name].html (EN)
-- sitemap.html
-- en/sitemap.html
-- sitemap.xml
-
----
+## DEPLOYMENT
+Site deploys automatically on push to main branch.
 
 ## GETTING HELP
-
-If something is unclear, check PROJECT-CONTEXT.md first.
+Check PROJECT-CONTEXT.md first.

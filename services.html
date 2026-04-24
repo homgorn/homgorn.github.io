@@ -1,13 +1,11 @@
 ---
 layout: default
 title: Каталог услуг | Гончаров М.
-description: Полный каталог услуг веб-разработки, SEO-продвижения, интеграции нейросетей, автоматизации и маркетинга. Выберите нужную услугу и закажите через Telegram.
+description: Полный каталог услуг веб-разработки, SEO, AI, автоматизации и маркетинга. Заказывайте через Telegram @notview
 ---
 
-<div class="page-header">
-  <h1>Каталог услуг</h1>
-  <p>Выберите категорию или найдите нужную услугу</p>
-</div>
+<h1>Каталог услуг</h1>
+<p>Выберите категорию или найдите нужную услугу</p>
 
 <div class="filters">
   <a href="/services/" class="filter active">Все</a>
@@ -20,26 +18,7 @@ description: Полный каталог услуг веб-разработки,
   <a href="/category/security/" class="filter">Безопасность</a>
 </div>
 
-<div class="services-grid">
-  {% for service in site.services %}
-  <article class="service-card">
-    <h2><a href="{{ service.url }}">{{ service.title }}</a></h2>
-    <p class="description">{{ service.description }}</p>
-    <div class="meta">
-      {% if service.price %}
-      <span class="price">от {{ service.price }} ₽</span>
-      {% endif %}
-      {% if service.tags %}
-      <div class="tags">
-        {% for tag in service.tags limit:3 %}
-        <span class="tag">{{ tag }}</span>
-        {% endfor %}
-      </div>
-      {% endif %}
-    </div>
-  </article>
-  {% endfor %}
-</div>
+<p style="text-align: center; color: #666;">Услуги загружаются...</p>
 
 <section class="cta">
   <h2>Не нашли нужную услугу?</h2>

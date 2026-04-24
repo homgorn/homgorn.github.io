@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://homgorn.github.io/sitemap.xml
+
+Host: https://homgorn.github.io

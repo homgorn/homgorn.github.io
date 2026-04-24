@@ -1,58 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Main pages - Russian -->
   <url>
     <loc>https://homgorn.github.io/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://homgorn.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homgorn.github.io/en/"/>
   </url>
   <url>
-    <loc>https://homgorn.github.io/services/</loc>
+    <loc>https://homgorn.github.io/services.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://homgorn.github.io/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homgorn.github.io/en/services.html"/>
   </url>
   <url>
-    <loc>https://homgorn.github.io/category/web-development/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://homgorn.github.io/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://homgorn.github.io/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homgorn.github.io/en/about.html"/>
   </url>
   <url>
-    <loc>https://homgorn.github.io/category/seo-optimization/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://homgorn.github.io/category/ai-services/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://homgorn.github.io/category/business-automation/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://homgorn.github.io/category/marketing-advertising/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://homgorn.github.io/category/import-export/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://homgorn.github.io/category/security/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://homgorn.github.io/about/</loc>
+    <loc>https://homgorn.github.io/contacts.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://homgorn.github.io/contacts.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homgorn.github.io/en/contacts.html"/>
   </url>
   <url>
-    <loc>https://homgorn.github.io/contact/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://homgorn.github.io/sitemap.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://homgorn.github.io/sitemap.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homgorn.github.io/en/sitemap.html"/>
   </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://homgorn.github.io/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://homgorn.github.io/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homgorn.github.io/en/blog/"/>
+  </url>
+  <url>
+    <loc>https://homgorn.github.io/blog/wordpress-seo-optimizatsiya-stranits.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://homgorn.github.io/blog/wordpress-seo-optimizatsiya-stranits.html"/>
+  </url>
+  <url>
+    <loc>https://homgorn.github.io/blog/neyroseti-dlya-biznesa.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://homgorn.github.io/blog/seo-checklist-2026.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://homgorn.github.io/blog/avtomatizatsiya-biznesa-n8n.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://homgorn.github.io/blog/kak-sozdat-internet-magazin.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://homgorn.github.io/blog/bezopasnost-wordpress.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Russian Categories -->
+  <url><loc>https://homgorn.github.io/category/web-development.html</loc><priority>0.9</priority></url>
+  <url><loc>https://homgorn.github.io/category/seo-optimization.html</loc><priority>0.9</priority></url>
+  <url><loc>https://homgorn.github.io/category/ai-services.html</loc><priority>0.9</priority></url>
+  <url><loc>https://homgorn.github.io/category/business-automation.html</loc><priority>0.8</priority></url>
+  <url><loc>https://homgorn.github.io/category/marketing-advertising.html</loc><priority>0.8</priority></url>
+  <url><loc>https://homgorn.github.io/category/import-export.html</loc><priority>0.7</priority></url>
+  <url><loc>https://homgorn.github.io/category/security-protection.html</loc><priority>0.7</priority></url>
+  <url><loc>https://homgorn.github.io/category/content-creation.html</loc><priority>0.7</priority></url>
+
+  <!-- English Pages -->
+  <url><loc>https://homgorn.github.io/en/</loc><priority>0.9</priority><xhtml:link rel="alternate" hreflang="ru" href="https://homgorn.github.io/"/></url>
+  <url><loc>https://homgorn.github.io/en/services.html</loc><priority>0.8</priority></url>
+  <url><loc>https://homgorn.github.io/en/about.html</loc><priority>0.6</priority></url>
+  <url><loc>https://homgorn.github.io/en/contacts.html</loc><priority>0.5</priority></url>
+  <url><loc>https://homgorn.github.io/en/sitemap.html</loc><priority>0.7</priority></url>
+  <url><loc>https://homgorn.github.io/en/blog/</loc><priority>0.8</priority></url>
+
+  <!-- English Categories -->
+  <url><loc>https://homgorn.github.io/en/category/web-development.html</loc><priority>0.8</priority></url>
+  <url><loc>https://homgorn.github.io/en/category/seo-optimization.html</loc><priority>0.8</priority></url>
+  <url><loc>https://homgorn.github.io/en/category/ai-services.html</loc><priority>0.8</priority></url>
+  <url><loc>https://homgorn.github.io/en/category/business-automation.html</loc><priority>0.7</priority></url>
+  <url><loc>https://homgorn.github.io/en/category/marketing-advertising.html</loc><priority>0.7</priority></url>
+  <url><loc>https://homgorn.github.io/en/category/import-export.html</loc><priority>0.6</priority></url>
+  <url><loc>https://homgorn.github.io/en/category/security-protection.html</loc><priority>0.6</priority></url>
+  <url><loc>https://homgorn.github.io/en/category/content-creation.html</loc><priority>0.6</priority></url>
+
 </urlset>

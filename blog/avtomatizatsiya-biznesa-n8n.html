@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автоматизация бизнеса с n8n: полное руководство | Leinid D</title>
+  <meta name="description" content="Настройка n8n для автоматизации бизнес-процессов. Интеграции с CRM, Telegram, email. Без кода.">
+  <meta name="keywords" content="n8n, автоматизация, Make, Zapier, CRM, интеграции">
+  <meta name="author" content="Leinid D">
+  <meta name="robots" content="index, follow">
+  
+  <link rel="canonical" href="https://homgorn.github.io/blog/avtomatizatsiya-biznesa-n8n.html">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Автоматизация бизнеса с n8n",
+    "author": { "@type": "Person", "name": "Leinid D" },
+    "datePublished": "2026-04-10"
+  }
+  </script>
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">Leinid <span>D</span></a>
+      <nav class="nav">
+        <a href="/">Главная</a>
+        <a href="/blog/">Блог</a>
+        <a href="https://wa.me/77054384888">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container article">
+      <article class="blog-post">
+        <header class="article-header">
+          <h1>Автоматизация бизнеса с n8n: полное руководство</h1>
+          <div class="blog-meta">
+            <time>10 апреля 2026</time>
+            <span>•</span>
+            <span>12 мин</span>
+            <span>•</span>
+            <span>Автоматизация</span>
+          </div>
+        </header>
+
+        <div class="article-content">
+          <p class="lead">n8n — бесплатный инструмент для автоматизации, который заменяет платные Zapier и Make. Покажу, что можно автоматизировать без программирования.</p>
+
+          <h2>Что такое n8n</h2>
+          <p>n8n (nodsn't want nod) — это инструмент с открытым исходным кодом. Вы можете:</p>
+          <ul>
+            <li>Установить на свой сервер (бесплатно)</li>
+            <li>Использовать cloud версию (бесплатный тариф)</li>
+            <li>Создавать сложные сценарии без кода</li>
+            <li>Интегрировать 300+ сервисов</li>
+          </ul>
+
+          <h2>Базовые сценарии</h2>
+
+          <h3>1. Новый лид → Telegram</h3>
+          <pre><code>Триггер: Форма на сайте ( Formspree )
+↓
+Узел: Telegram → Отправить сообщение</code></pre>
+          <p>Когда клиент оставляет заявку — приходит уведомление в Telegram. Экономия: 15 минут в день на проверку почты.</p>
+
+          <h3>2. Заказ → CRM + Google Таблица</h3>
+          <pre><code>Триггер: WooCommerce / Tilda
+↓
+Узел: Добавить строку в Google Таблицы
+↓
+Узел: Создать контакт �� Bitrix24 / amoCRM</code></pre>
+          <p>Все заказы автоматически попадают в CRM и таблицу. Никакого ручного ввода.</p>
+
+          <h3>3. Напоминание о birthday клиента</h3>
+          <pre><code>Триггер: Расписание (каждый день в 9:00)
+↓
+Узел: Поиск контактов с birthday сегодня
+↓
+Узел: Отправить поздравление в Telegram менеджеру</code></pre>
+
+          <h3>4. Постинг в соцсети</h3>
+          <pre><code>Триггер: RSS WordPress
+↓
+Узел: Twitter / Facebook / VK
+↓
+Узел: Telegram → Уведомление о посте</code></pre>
+
+          <h2>Готовые шаблоны</h2>
+          <p>n8n имеет встроенный маркетплейс с 1000+ шаблонов:</p>
+          <ul>
+            <li>Google Workspace automation</li>
+            <li>CRM интеграции</li>
+            <li>Email автоматизация</li>
+            <li>AI workflow (ChatGPT, Claude)</li>
+            <li>Telegram боты</li>
+          </ul>
+
+          <h2>Сколько стоит</h2>
+          <ul>
+            <li><strong>Self-hosted</strong> — бесплатно (ваш сервер)</li>
+            <li><strong>Cloud (бесплатный)</strong> — 1 пользователь, 1000 запусков/мес</li>
+            <li><strong>Cloud Pro</strong> — $20/мес (безлимит)</li>
+          </ul>
+
+          <blockquote>
+            <p>Клиент автоматизировал 5 бизнес-процессов и сократил расходы на менеджера 25,000 ₽/мес. Окупилось за 2 недели.</p>
+          </blockquote>
+
+          <h2>Как начать</h2>
+          <ol>
+            <li>Зарегистрируйтесь на n8n.cloud</li>
+            <li>Выберите шаблон из маркетплейса</li>
+            <li>Настройте подключения (Google, Telegram, CRM)</li>
+            <li>Активируйте workflow</li>
+            <li>Мониторьте в разделе "Executions"</li>
+          </ol>
+
+          <div class="related-posts">
+            <h3>Похожие статьи</h3>
+            <ul>
+              <li><a href="/blog/neyroseti-dlya-biznesa.html">Нейросети для бизнеса</a></li>
+              <li><a href="/category/business-automation.html">Услуги автоматизации</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Leinid D</p>
+    </div>
+  </footer>
+</body>
+</html>

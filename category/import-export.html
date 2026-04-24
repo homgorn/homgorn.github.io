@@ -1,28 +1,78 @@
 ---
 layout: default
-title: Импорт и экспорт | Гончаров М.
-description: Парсинг данных, выгрузка товаров на маркетплейсы Wildberries, Ozon, Яндекс.Маркет. Конвертация форматов. Заказать через Telegram @notview
+title: Данные и интеграции | Leinid D
+description: Парсинг данных, интеграции с маркетплейсами, импорт/экспорт данных, Excel.
+keywords: парсинг, маркетплейс, import, export, excel, данные
+author: Leinid D
+lang: ru
+url: /category/import-export.html
+url_en: /en/category/import-export.html
 ---
 
-<div class="page-header">
-  <h1>Импорт и экспорт</h1>
-  <p>Парсинг, маркетплейсы, данные</p>
-</div>
+<div class="container">
+  <section class="page-title">
+    <h1>Данные и интеграции</h1>
+    <p>Парсинг, маркетплейсы, Excel</p>
+    <p><small><a href="/en/category/import-export.html">English version</a></small></p>
+  </section>
 
-<div class="filters">
-  <a href="/services/">← Все услуги</a>
-</div>
+  <div class="filters">
+    <a href="/services.html">← Все услуги</a>
+    <a href="/category/import-export.html" class="active">Данные</a>
+    <a href="/category/web-development.html">Веб-разработка</a>
+    <a href="/category/business-automation.html">Автоматизация</a>
+  </div>
 
-<div class="services-grid">
-  {% for service in site.services %}
-    {% if service.category == "import-export" %}
+  <section class="services-grid">
     <article class="service-card">
-      <h2><a href="{{ service.url }}">{{ service.title }}</a></h2>
-      <p>{{ service.description }}</p>
-      {% if service.price %}
-      <span class="price">от {{ service.price }} ₽</span>
-      {% endif %}
+      <h3>Парсинг сайтов</h3>
+      <p>Сбор данных с любых сайтов: товары, цены, контакты. Excel, CSV выгрузка.</p>
+      <span class="price">от 5 000 ₽</span>
+      <a href="https://wa.me/77054384888" class="order-btn">Заказать</a>
     </article>
-    {% endif %}
-  {% endfor %}
+    <article class="service-card">
+      <h3>Интеграция с маркетплейсами</h3>
+      <p>Выгрузка товаров на Wildberries, Ozon, Яндекс Маркет. Карточки, цены, остатки.</p>
+      <span class="price">от 15 000 ₽</span>
+      <a href="https://wa.me/77054384888" class="order-btn">Заказать</a>
+    </article>
+    <article class="service-card">
+      <h3>Обработка данных Excel</h3>
+      <p>Макросы VBA, формулы, сводные таблицы. Автоматизация отчетов.</p>
+      <span class="price">от 3 000 ₽</span>
+      <a href="https://wa.me/77054384888" class="order-btn">Заказать</a>
+    </article>
+    <article class="service-card">
+      <h3>Импорт/экспорт</h3>
+      <p>Перенос данных между системами. WordPress, CMS, Excel, CSV.</p>
+      <span class="price">от 5 000 ₽</span>
+      <a href="https://wa.me/77054384888" class="order-btn">Заказать</a>
+    </article>
+  </section>
+
+  <section class="cta">
+    <h2>Заказать парсинг</h2>
+    <a href="https://wa.me/77054384888" class="btn">Написать в WhatsApp</a>
+  </section>
+
+  <section class="related-services">
+    <h3>Сопутствующие услуги</h3>
+    <div class="services-grid">
+      <article class="service-card">
+        <h3>Веб-разработка</h3>
+        <p>Сайты и магазины</p>
+        <a href="/category/web-development.html" class="order-btn">Подробнее</a>
+      </article>
+      <article class="service-card">
+        <h3>Автоматизация</h3>
+        <p>n8n процессы</p>
+        <a href="/category/business-automation.html" class="order-btn">Подробнее</a>
+      </article>
+      <article class="service-card">
+        <h3>Маркетинг</h3>
+        <p>Реклама</p>
+        <a href="/category/marketing-advertising.html" class="order-btn">Подробнее</a>
+      </article>
+    </div>
+  </section>
 </div>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Защита WordPress от взлома: полный чеклист | Leinid D</title>
+  <meta name="description" content="Полный чеклист безопасности WordPress. 15 шагов для защиты сайта от взлома, вирусов и хакеров.">
+  <meta name="keywords" content="безопасность WordPress, защита, взлом, вирус, SSL">
+  <meta name="author" content="Leinid D">
+  <meta name="robots" content="index, follow">
+  
+  <link rel="canonical" href="https://homgorn.github.io/blog/bezopasnost-wordpress.html">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Защита WordPress от взлома",
+    "author": { "@type": "Person", "name": "Leinid D" },
+    "datePublished": "2026-04-01"
+  }
+  </script>
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">Leinid <span>D</span></a>
+      <nav class="nav">
+        <a href="/">Главная</a>
+        <a href="/blog/">Блог</a>
+        <a href="https://wa.me/77054384888">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container article">
+      <article class="blog-post">
+        <header class="article-header">
+          <h1>Защита WordPress от взлома: полный чеклист</h1>
+          <div class="blog-meta">
+            <time>1 апреля 2026</time>
+            <span>•</span>
+            <span>10 мин</span>
+            <span>•</span>
+            <span>Безопасность</span>
+          </div>
+        </header>
+
+        <div class="article-content">
+          <p class="lead">60% взломанных сайтов — WordPress. Хакеры автоматизировали атаки. Ваш сайт — цель для ботнетов и спама. Защититесь.</p>
+
+          <h2>Базовые меры (обязательно)</h2>
+          
+          <h3>1. Обновляйте всё</h3>
+          <ul>
+            <li>WordPress → всегда последняя версия</li>
+            <li>Плагины → обновлять сразу</li>
+            <li>Тема → обновлять или сменить</li>
+          </ul>
+
+          <h3>2. Сложный пароль админа</h3>
+          <ul>
+            <li>Минимум 16 символов</li>
+            <li>Заглавные + строчные + цифры + спецсимволы</li>
+            <li>Менять каждые 3 месяца</li>
+          </ul>
+
+          <h3>3. SSL сертификат</h3>
+          <p>Бесплатный Let's Encrypt:</p>
+          <ul>
+            <li>Шифрование данных</li>
+            <li>Доверие пользователей</li>
+            <li>SEO-бонус (HTTPS)</li>
+          </ul>
+
+          <h2>Усиленная защита</h2>
+
+          <h3>4. Измените URL входа</h3>
+          <p>По умолчанию /wp-admin — всем известно. Измените:</p>
+          <ul>
+            <li>Плагин: WPS Hide Login</li>
+            <li>Новый URL: /secret-login</li>
+          </ul>
+
+          <h3>5. Ограничьте попытки входа</h3>
+          <p>Брутфорс-атаки — 1000 попыток в секунду:</p>
+          <ul>
+            <li>Плагин: Limit Login Attempts</li>
+            <li>Блокировка после 3 неудач</li>
+            <li>Блокировка IP на 24 часа</li>
+          </ul>
+
+          <h3>6. Двухфакторная аутентификация</h3>
+          <p>Даже если украдут пароль:</p>
+          <ul>
+            <li>Google Authenticator</li>
+            <li>SMS код</li>
+            <li>Резервные коды</li>
+          </ul>
+
+          <h3>7. Отключите XML-RPC</h3>
+          <p>Уязвимый протокол используется для:</p>
+          <ul>
+            <li>Jetpack аутентификация</li>
+            <li>pingback атаки</li>
+          </ul>
+          <pre><code>add_filter('xmlrpc_enabled', '__return_false');
+add_filter('enable_xmlrpc_multicall', '__return_false');</code></pre>
+
+          <h3>8. Скройте версию WordPress</h3>
+          <pre><code>remove_action('wp_generator', 'wp_generator');
+remove_action('wp_head', 'wp_generator');</code></pre>
+
+          <h3>9. Права на файлы</h3>
+          <ul>
+            <li>wp-config.php — 400 (только чтение)</li>
+            <li>wp-content — 755 (папки)</li>
+            <li>wp-content/uploads — 755</li>
+          </ul>
+
+          <h2>Мониторинг</h2>
+
+          <h3>10. Сканер на малвар</h3>
+          <ul>
+            <li><strong>Wordfence</strong> — сканер + firewall</li>
+            <li><strong>Malcare</strong> — облачный сканер</li>
+            <li><strong> Sucuri</strong> — премиум</li>
+          </ul>
+
+          <h3>11. Логины на email</h3>
+          <p>Вместо логина — email:</p>
+          <ul>
+            <li>Сложнее подобрать</li>
+            <li>Легче запомнить</li>
+            <li>Плагин: No Login by Email</li>
+          </ul>
+
+          <h2>Резервное копирование</h2>
+
+          <h3>12. Автоматические бэкапы</h3>
+          <ul>
+            <li>Ежедневно (VersionPress)</li>
+            <li>Хранить 30 дней</li>
+            <li>В облаке (Google Drive, S3)</li>
+          </ul>
+
+          <h3>13. Протокол восстановления</h3>
+          <ol>
+            <li>Скачать бэкап</li>
+            <li>Восстановить файлы</li>
+            <li>Восстановить базу</li>
+            <li>Проверить доступы</li>
+          </ol>
+
+          <blockquote>
+            <p>После взлома восстановление занимает 2-7 дней. Профилактика — 30 минут. Выберите.</p>
+          </blockquote>
+
+          <h2>Чеклист в one-line</h2>
+          <ol>
+            <li>Обновления</li>
+            <li>Сложный пароль</li>
+            <li>SSL</li>
+            <li>WPS Hide Login</li>
+            <li>Limit Login</li>
+            <li>2FA</li>
+            <li>Wordfence</li>
+            <li>Бэкапы</li>
+          </ol>
+
+          <div class="related-posts">
+            <h3>Похожие статьи</h3>
+            <ul>
+              <li><a href="/blog/wordpress-seo-optimizatsiya-stranits.html">Ускорение WordPress</a></li>
+              <li><a href="/category/security-protection.html">Услуги защиты</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Leinid D</p>
+    </div>
+  </footer>
+</body>
+</html>

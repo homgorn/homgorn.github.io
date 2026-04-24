@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Как создать интернет-магазин на WordPress: пошагово | Leinid D</title>
+  <meta name="description" content="Пошаговое руководство: как создать интернет-магазин на WordPress и WooCommerce. От хостинга до первой продажи.">
+  <meta name="keywords" content="интернет-магазин, WooCommerce, WordPress, магазин, создать">
+  <meta name="author" content="Leinid D">
+  <meta name="robots" content="index, follow">
+  
+  <link rel="canonical" href="https://homgorn.github.io/blog/kak-sozdat-internet-magazin.html">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Как создать интернет-магазин на WordPress",
+    "author": { "@type": "Person", "name": "Leinid D" },
+    "datePublished": "2026-04-05"
+  }
+  </script>
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">Leinid <span>D</span></a>
+      <nav class="nav">
+        <a href="/">Главная</a>
+        <a href="/blog/">Блог</a>
+        <a href="https://wa.me/77054384888">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container article">
+      <article class="blog-post">
+        <header class="article-header">
+          <h1>Как создать интернет-магазин на WordPress</h1>
+          <div class="blog-meta">
+            <time>5 апреля 2026</time>
+            <span>•</span>
+            <span>15 мин</span>
+            <span>•</span>
+            <span>WordPress</span>
+          </div>
+        </header>
+
+        <div class="article-content">
+          <p class="lead">Создание интернет-магазина — это не так сложно, как кажется. За 10+ лет я сделал 100+ магазинов. Делюсь проверенной схемой.</p>
+
+          <h2>Что понадобится</h2>
+          <ul>
+            <li><strong>Домен</strong> — 1000₽/год (.ru, .рф)</li>
+            <li><strong>Хостинг</strong> — от 200₽/мес (VPS с SSD)</li>
+            <li><strong>WordPress</strong> — бесплатно</li>
+            <li><strong>WooCommerce</strong> — бесплатно</li>
+            <li><strong>Тема</strong> — бесплатная или от 3000₽</li>
+          </ul>
+
+          <h2>Шаг 1: Хостинг и домен</h2>
+          <p>Рекомендую:</p>
+          <ul>
+            <li><strong>Reg.ru</strong> — домен</li>
+            <li><strong>FastVPS</strong> или <strong>Timeweb</strong> — VPS с NVMe</li>
+            <li><strong>Панель</strong> — BrainyCP или ISPmanager</li>
+          </ul>
+
+          <h2>Шаг 2: Установка WordPress</h2>
+          <p>Через панель хостинга (1 клик) или вручную:</p>
+          <pre><code>mkdir -p /var/www/wordpress
+wget https://wordpress.org/latest.tar.gz
+tar -xzf latest.tar.gz -C /var/www/wordpress --strip-components=1</code></pre>
+
+          <h2>Шаг 3: Установка WooCommerce</h2>
+          <p>В админке WordPress:</p>
+          <ol>
+            <li>Плагины → Добавить новый</li>
+            <li>Поиск: WooCommerce</li>
+            <li>Установить и активировать</li>
+            <li>Настройка через Wizard</li>
+          </ol>
+
+          <h2>Шаг 4: Настройка магазина</h2>
+          <ul>
+            <li><strong>Товары</strong> — добавить в каталог</li>
+            <li><strong>Доставка</strong> — способы (СДЭК, Деловые Линии, самовывоз)</li>
+            <li><strong>Оплата</strong> — ЮKassa, Robokassa, перевод</li>
+            <li><strong>Валюта</strong> — рубли</li>
+            <li><strong>Налоги</strong> — включить в цену</li>
+          </ul>
+
+          <h2>Шаг 5: Выбор темы</h2>
+          <p>Бесплатные:</p>
+          <ul>
+            <li><strong>Storefront</strong> — официальная, легкая</li>
+            <li><strong>Astra</strong> — быстрая</li>
+            <li><strong>GeneratePress</strong></li>
+          </ul>
+          <p>Платные (3000-15000₽):</p>
+          <ul>
+            <li><strong>Flatsome</strong> — самый популярный</li>
+            <li><strong>WoodMart</strong></li>
+            <li><strong>Porto</strong></li>
+          </ul>
+
+          <h2>Шаг 6: Essential плагины</h2>
+          <ul>
+            <li><strong>Yoast SEO</strong> — продвижение</li>
+            <li><strong>WooCommerce PDF Invoices</strong> — счета</li>
+            <li><strong>Contact Form 7</strong> — форма связи</li>
+            <li><strong>LiteSpeed Cache</strong> — скорость</li>
+            <li><strong>Wordfence</strong> — безопасность</li>
+          </ul>
+
+          <h2>Шаг 7: Первый товар</h2>
+          <ol>
+            <li>Товары → Добавить новый</li>
+            <li>Название, описание, фото</li>
+            <li>Цена (обычная + распродажа)</li>
+            <li>Категория</li>
+            <li>Атрибуты (размер, цвет)</li>
+            <li>Опубликовать</li>
+          </ol>
+
+          <blockquote>
+            <p>Первый магазин можно запустить за 2-3 часа. Сложнее — наполнение каталога и настройка интеграций.</p>
+          </blockquote>
+
+          <h2>Стоимость запуска</h2>
+          <ul>
+            <li><strong>Домен</strong> — 900₽/год</li>
+            <li><strong>Хостинг</strong> — 3000₽/год</li>
+            <li><strong>Тема</strong> — 3000-10000₽ (разово)</li>
+            <li><strong>Настройка</strong> — 5000-20000₽ (если с фрилансером)</li>
+          </ul>
+
+          <div class="related-posts">
+            <h3>Похожие статьи</h3>
+            <ul>
+              <li><a href="/blog/wordpress-seo-optimizatsiya-stranits.html">Ускорение WordPress</a></li>
+              <li><a href="/category/web-development.html">Услуги разработки</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Leinid D</p>
+    </div>
+  </footer>
+</body>
+</html>

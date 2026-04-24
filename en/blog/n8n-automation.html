@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Automation with n8n: Complete Guide | Leinid D</title>
+  <meta name="description" content="Setup n8n for business automation. CRM, Telegram, email integrations. No code required.">
+  <meta name="keywords" content="n8n, automation, Make, Zapier, CRM">
+  
+  <link rel="canonical" href="https://homgorn.github.io/en/blog/n8n-automation.html">
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/en/" class="logo">Leinid <span>D</span></a>
+      <nav class="nav">
+        <a href="/en/">Home</a>
+        <a href="/en/blog/">Blog</a>
+        <a href="https://wa.me/77054384888">Contacts</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container article">
+      <article class="blog-post">
+        <header class="article-header">
+          <h1>Business Automation with n8n: Complete Guide</h1>
+          <div class="blog-meta">
+            <time>April 10, 2026</time>
+            <span>•</span>
+            <span>12 min</span>
+            <span>•</span>
+            <span>Automation</span>
+          </div>
+        </header>
+
+        <div class="article-content">
+          <p class="lead">n8n — free automation tool that replaces paid Zapier and Make. I'll show what you can automate without programming.</p>
+
+          <h2>What is n8n</h2>
+          <p>n8n (doesn't want nod) — open source automation. You can:</p>
+          <ul>
+            <li>Install on your server (free)</li>
+            <li>Use cloud version (free tier)</li>
+            <li>Create complex scenarios without code</li>
+            <li>Integrate 300+ services</li>
+          </ul>
+
+          <h2>Basic Workflows</h2>
+
+          <h3>1. New Lead → Telegram</h3>
+          <pre><code>Trigger: Form on site (Formspree)
+↓
+Node: Telegram → Send message</code></pre>
+          <p>When client leaves request — notification in Telegram. Save 15 minutes/day checking email.</p>
+
+          <h3>2. Order → CRM + Google Sheets</h3>
+          <pre><code>Trigger: WooCommerce / Tilda
+↓
+Node: Add row to Google Sheets
+↓
+Node: Create contact in Bitrix24 / amoCRM</code></pre>
+          <p>All orders automatically go to CRM and table. No manual entry.</p>
+
+          <h3>3. Birthday Reminder</h3>
+          <pre><code>Trigger: Schedule (daily at 9:00)
+↓
+Node: Find contacts with birthday today
+↓
+Node: Send congratulations to manager in Telegram</code></pre>
+
+          <h3>4. Social Media Posting</h3>
+          <pre><code>Trigger: RSS WordPress
+↓
+Node: Twitter / Facebook / VK
+↓
+Node: Telegram → Notify about post</code></pre>
+
+          <h2>Ready Templates</h2>
+          <p>n8n has built-in marketplace with 1000+ templates:</p>
+          <ul>
+            <li>Google Workspace automation</li>
+            <li>CRM integrations</li>
+            <li>Email automation</li>
+            <li>AI workflow (ChatGPT, Claude)</li>
+            <li>Telegram bots</li>
+          </ul>
+
+          <h2>Pricing</h2>
+          <ul>
+            <li><strong>Self-hosted</strong> — free (your server)</li>
+            <li><strong>Cloud (free)</strong> — 1 user, 1000 runs/month</li>
+            <li><strong>Cloud Pro</strong> — $20/month (unlimited)</li>
+          </ul>
+
+          <blockquote>
+            <p>Client automated 5 business processes and cut costs by 25,000₽/month. ROI in 2 weeks.</p>
+          </blockquote>
+
+          <h2>How to Start</h2>
+          <ol>
+            <li>Register at n8n.cloud</li>
+            <li>Choose template from marketplace</li>
+            <li>Connect services (Google, Telegram, CRM)</li>
+            <li>Activate workflow</li>
+            <li>Monitor in "Executions"</li>
+          </ol>
+
+          <div class="related-posts">
+            <h3>Related</h3>
+            <ul>
+              <li><a href="/en/blog/ai-for-business.html">AI for Business</a></li>
+              <li><a href="/en/services.html">Automation Services</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Leinid D</p>
+    </div>
+  </footer>
+</body>
+</html>

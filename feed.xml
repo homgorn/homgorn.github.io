@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title>Блог Leinid D - Веб-разработка и SEO</title>
+  <link>https://homgorn.github.io</link>
+  <description>Статьи о веб-разработке на WordPress, SEO-продвижении, нейросетях и автоматизации бизнеса. Опыт 10+ лет.</description>
+  <language>ru</language>
+  <lastBuildDate>Fri, 24 Apr 2026 12:00:00 +0500</lastBuildDate>
+  <atom:link href="https://homgorn.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+  <managingEditor>refertur.net@gmail.com (Leinid D)</managingEditor>
+  <webMaster>refertur.net@gmail.com (Leinid D)</webMaster>
+  
+  <!-- Article 1 -->
+  <item>
+    <title>Как ускорить WordPress сайт: 20 практических советов</title>
+    <link>https://homgorn.github.io/blog/wordpress-seo-optimizatsiya-stranits.html</link>
+    <description>Полное руководство по оптимизации скорости WordPress. 20 практических советов для ускорения сайта.</description>
+    <pubDate>Fri, 24 Apr 2026 12:00:00 +0500</pubDate>
+    <dc:creator>Leinid D</dc:creator>
+    <guid isPermaLink="true">https://homgorn.github.io/blog/wordpress-seo-optimizatsiya-stranits.html</guid>
+    <category>WordPress</category>
+    <category>Веб-разработка</category>
+  </item>
+  
+  <!-- Article 2 -->
+  <item>
+    <title>Как использовать нейросети для бизнеса</title>
+    <link>https://homgorn.github.io/blog/neyroseti-dlya-biznesa.html</link>
+    <description>Практическое руководство по интеграции ChatGPT, Claude в бизнес-процессы.</description>
+    <pubDate>Mon, 20 Apr 2026 12:00:00 +0500</pubDate>
+    <dc:creator>Leinid D</dc:creator>
+    <guid isPermaLink="true">https://homgorn.github.io/blog/neyroseti-dlya-biznesa.html</guid>
+    <category>Нейросети</category>
+    <category>AI</category>
+  </item>
+  
+  <!-- Article 3 -->
+  <item>
+    <title>SEO чеклист 2026: что работает</title>
+    <link>https://homgorn.github.io/blog/seo-checklist-2026.html</link>
+    <description>Актуальный чеклист SEO-продвижения. Что важно учитывать в 2026 году.</description>
+    <pubDate>Tue, 15 Apr 2026 12:00:00 +0500</pubDate>
+    <dc:creator>Leinid D</dc:creator>
+    <guid isPermaLink="true">https://homgorn.github.io/blog/seo-checklist-2026.html</guid>
+    <category>SEO</category>
+    <category>Продвижение</category>
+  </item>
+  
+  <!-- Article 4 -->
+  <item>
+    <title>Автоматизация бизнеса с n8n</title>
+    <link>https://homgorn.github.io/blog/avtomatizatsiya-biznesa-n8n.html</link>
+    <description>Настройка автоматических воронок продаж, интеграции с CRM.</description>
+    <pubDate>Thu, 10 Apr 2026 12:00:00 +0500</pubDate>
+    <dc:creator>Leinid D</dc:creator>
+    <guid isPermaLink="true">https://homgorn.github.io/blog/avtomatizatsiya-biznesa-n8n.html</guid>
+    <category>Автоматизация</category>
+    <category>n8n</category>
+  </item>
+  
+  <!-- Article 5 -->
+  <item>
+    <title>Как создать интернет-магазин на WordPress</title>
+    <link>https://homgorn.github.io/blog/kak-sozdat-internet-magazin.html</link>
+    <description>Пошаговое руководство от выбора хо��тинга до первых продаж.</description>
+    <pubDate>Sat, 05 Apr 2026 12:00:00 +0500</pubDate>
+    <dc:creator>Leinid D</dc:creator>
+    <guid isPermaLink="true">https://homgorn.github.io/blog/kak-sozdat-internet-magazin.html</guid>
+    <category>WordPress</category>
+    <category>Интернет-магазин</category>
+  </item>
+  
+  <!-- Article 6 -->
+  <item>
+    <title>Защита WordPress от взлома</title>
+    <link>https://homgorn.github.io/blog/bezopasnost-wordpress.html</link>
+    <description>Полный чеклист безопасности WordPress. 15 шагов для защиты сайта.</description>
+    <pubDate>Tue, 01 Apr 2026 12:00:00 +0500</pubDate>
+    <dc:creator>Leinid D</dc:creator>
+    <guid isPermaLink="true">https://homgorn.github.io/blog/bezopasnost-wordpress.html</guid>
+    <category>Безопасность</category>
+    <category>WordPress</category>
+  </item>
+  
+</channel>
+</rss>

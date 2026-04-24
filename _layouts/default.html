@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="keywords" content="{{ page.keywords }}">
+  <meta name="author" content="Leinid D">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Hreflang SEO - FULL bidirectional linking -->
+  <!-- Self-reference -->
+  <link rel="alternate" hreflang="ru" href="https://homgorn.github.io{{ page.url }}">
+  <!-- English version -->
+  <link rel="alternate" hreflang="en" href="https://homgorn.github.io/en{{ page.url }}">
+  <!-- x-default to Russian -->
+  <link rel="alternate" hreflang="x-default" href="https://homgorn.github.io{{ page.url }}">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://homgorn.github.io{{ page.url }}">
+  <meta property="og:site_name" content="Leinid D">
+  <meta property="og:locale" content="ru_RU">
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://homgorn.github.io{{ page.url }}">
+  
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Leinid D",
+    "email": "refertur.net@gmail.com",
+    "url": "https://homgorn.github.io",
+    "jobTitle": "Веб-разработчик"
+  }
+  </script>
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">Leinid <span>D</span></a>
+      <nav class="nav">
+        <a href="/">Главная</a>
+        <a href="/services.html">Услуги</a>
+        <a href="https://wa.me/77054384888">Контакты</a>
+        <a href="/en{{ page.url }}" class="lang-link">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Leinid D. Все права защищены.</p>
+      <p>WhatsApp: +7 705 438 4888 | Email: refertur.net@gmail.com</p>
+    </div>
+  </footer>
+</body>
+</html>

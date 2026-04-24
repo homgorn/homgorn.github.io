@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Как ускорить WordPress сайт: 20 практических советов | Leinid D</title>
+  <meta name="description" content="Полное руководство по оптимизации скорости WordPress. 20 практических советов для ускорения сайта. От чистки базы данных до настройки кэширования.">
+  <meta name="keywords" content: "ускорить WordPress, оптимизация скорости, быстрый сайт, PageSpeed, кэширование, WebP, WordPress производительность">
+  <meta name="author" content="Leinid D">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="ru" href="https://homgorn.github.io/blog/wordpress-seo-optimizatsiya-stranits.html">
+  <link rel="alternate" hreflang="x-default" href="https://homgorn.github.io/blog/wordpress-seo-optimizatsiya-stranits.html">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Как ускорить WordPress сайт: 20 практических советов">
+  <meta property="og:description" content="Полное руководство по оптимизации скорости WordPress.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://homgorn.github.io/blog/wordpress-seo-optimizatsiya-stranits.html">
+  
+  <link rel="canonical" href="https://homgorn.github.io/blog/wordpress-seo-optimizatsiya-stranits.html">
+  
+  <!-- Schema.org Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Как ускорить WordPress сайт: 20 практических советов",
+    "description": "Полное руководство по оптимизации скорости WordPress",
+    "author": {
+      "@type": "Person",
+      "name": "Leinid D",
+      "email": "refertur.net@gmail.com"
+    },
+    "datePublished": "2026-04-24",
+    "dateModified": "2026-04-24",
+    "publisher": {
+      "@type": "Person",
+      "name": "Leinid D"
+    },
+    "url": "https://homgorn.github.io/blog/wordpress-seo-optimizatsiya-stranits.html",
+    "image": "https://homgorn.github.io/assets/img/wordpress-speed.jpg",
+    "wordCount": 2000,
+    "articleSection": "Веб-разработка"
+  }
+  </script>
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">Leinid <span>D</span></a>
+      <nav class="nav">
+        <a href="/">Главная</a>
+        <a href="/services.html">Услуги</a>
+        <a href="/blog/">Блог</a>
+        <a href="https://wa.me/77054384888">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container article">
+      <article class="blog-post">
+        <header class="article-header">
+          <h1>Как ускорить WordPress сайт: 20 практических советов</h1>
+          <div class="blog-meta">
+            <time datetime="2026-04-24">24 апреля 2026</time>
+            <span>•</span>
+            <span>20 мин чтения</span>
+            <span>•</span>
+            <span>WordPress</span>
+          </div>
+        </header>
+
+        <div class="article-content">
+          <p class="lead">Скорость сайта — один из ключевых факторов ранжирования в Google. Медленный сайт теряет посетителей и позиции в поиске. В этом руководстве — 20 проверенных способов ускорить WordPress.</p>
+
+          <h2>1. Выберите быстрый хостинг</h2>
+          <p>Начните с хостинга. Shared-хостинг — медленный. Выберите:</p>
+          <ul>
+            <li>VPS с NVMe накопителем</li>
+            <li>PHP 8.2+ (modern версия)</li>
+            <li>HTTP/3 (QUIC) поддержка</li>
+          </ul>
+
+          <h2>2. Обновите PHP до 8.2</h2>
+          <p>PHP 8.2 на 20-40% быстрее чем PHP 7.4. Обновите в панели хостинга.</p>
+
+          <h2>3. Включите кэширование</h2>
+          <p>Основное ускорение — кэширование:</p>
+          <ul>
+            <li>LiteSpeed Cache (серверное)</li>
+            <li>WP Super Cache или W3 Total Cache</li>
+            <li>Object Cache (Redis/Memcached)</li>
+          </ul>
+
+          <h2>4. Оптимизируйте изображения</h2>
+          <p>Изображения — основная причина медлительности:</p>
+          <ul>
+            <li>WebP вместо JPEG/PNG (на 30% меньше)</li>
+            <li>Lazy Load (отложенная загрузка)</li>
+            <li>Сжатие без потерь</li>
+            <li>Размер — не более 100KB</li>
+          </ul>
+
+          <h2>5. Очистите базу данных</h2>
+          <p>Со временем база засоряется:</p>
+          <ul>
+            <li>Удалите ревизии постов (сохраните только последние 3)</li>
+            <li>Очистите таблицы wp_options, wp_postmeta</li>
+            <li>Удалите спам-комментарии</li>
+            <li>Используйте WP-Optimize плагин</li>
+          </ul>
+
+          <h2>6. Удалите ненужные плагины</h2>
+          <p>Каждый плагин — запрос к базе. Оставьте только:</p>
+          <ul>
+            <li>SEO (Yoast/RankMath)</li>
+            <li>Кэширование</li>
+            <li>Безопасность</li>
+            <li>Формы (Contact Form 7)</li>
+          </ul>
+
+          <h2>7. Используйте CDN</h2>
+          <p>Content Delivery Network ускоряет доставку:</p>
+          <ul>
+            <li>Cloudflare (бесплатный план)</li>
+            <li>static файлы — CSS, JS, изображения</li>
+            <li>DDoS-защита включена</li>
+          </ul>
+
+          <h2>8. Минимизируйте CSS и JS</h2>
+          <p>Объедините и сожмите файлы:</p>
+          <ul>
+            <li>Autoptimize — объединение CSS/JS</li>
+            <li>Удалите неиспользуемый CSS</li>
+            <li>Отложенная загрузка JS</li>
+          </ul>
+
+          <h2>9. Настройте浏览器 кэш</h2>
+          <p>Добавьте в .htaccess:</p>
+          <pre><code>ExpiresActive On
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"</code></pre>
+
+          <h2>10. Отключите Emoji в WordPress</h2>
+          <p>WordPress загружает Emoji-скрипт всегда. Отключите:</p>
+          <pre><code>remove_action('wp_head', 'print_emoji_detection_scripts');
+remove_action('wp_print_styles', 'print_emoji_styles');</code></pre>
+
+          <h2>Дополнительные советы</h2>
+          <ol>
+            <li><strong>GZIP сжатие</strong> — включите на сервере</li>
+            <li><strong>Предзагрузка DNS</strong> — preload关键的 CDN домены</li>
+            <li><strong> критический CSS</strong> — встройте в HTML</li>
+            <li><strong>Шрифты</strong> — используйте системные или предзагружайте</li>
+            <li><strong>Видео</strong> — размещайте на Vimeo/YouTube</li>
+            <li><strong>Базу данных</strong> — оптимизируйте запросы с Query Monitor</li>
+            <li><strong>HTTP/2</strong> — включите на хостинге</li>
+            <li><strong>SSL</strong> — используйте HTTP/2</li>
+            <li><strong>Мониторинг</strong> — PageSpeed Insights регулярно</li>
+            <li><strong>Кэш браузера</strong> — max-age = 1 год для статики</li>
+          </ol>
+
+          <h2>Проверка результата</h2>
+          <p>После оптимизации проверьте:</p>
+          <ul>
+            <li><a href="https://pagespeed.web.dev/">PageSpeed Insights</a> — целевой 90+</li>
+            <li><a href="https://web.dev mesure/">Web Vitals</a> — LCP &lt; 2.5s</li>
+            <li><a href="https://gtmetrix.com/">GTmetrix</a> — A или B оценка</li>
+          </ul>
+
+          <blockquote>
+            <p>Скорость сайта влияет на конверсию. Каждая секунда задержки — минус 7% продаж.</p>
+          </blockquote>
+
+          <h2>Заключение</h2>
+          <p>Оптимизация WordPress — это не разовое действие, а процесс. Регулярно проверяйте скорость, обновляйте PHP, чистите базу. Скорость 90+ в PageSpeed — достижима для любого WordPress сайта.</p>
+
+          <div class="related-posts">
+            <h3>Похожие статьи</h3>
+            <ul>
+              <li><a href="/blog/bezopasnost-wordpress.html">Защита WordPress от взлома</a></li>
+              <li><a href="/blog/kak-sozdat-internet-magazin.html">Как создать интернет-магазин</a></li>
+              <li><a href="/category/web-development.html">Услуги веб-разработки</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Leinid D. Все права защищены.</p>
+      <p>WhatsApp: +7 705 438 4888 | Email: refertur.net@gmail.com</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="keywords" content="{{ page.keywords }}">
+  <meta name="author" content="Leinid D">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Hreflang for multilingual SEO -->
+  <link rel="alternate" hreflang="ru" href="https://homgorn.github.io{{ page.url_ru }}">
+  <link rel="alternate" hreflang="en" href="https://homgorn.github.io{{ page.url }}">
+  <link rel="alternate" hreflang="x-default" href="https://homgorn.github.io{{ page.url_ru }}">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://homgorn.github.io{{ page.url }}">
+  <meta property="og:site_name" content="Leinid D - Web Development">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  
+  <!-- Canonical -->
+  <link rel="canonical" href="https://homgorn.github.io{{ page.url }}">
+  
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Leinid D",
+    "email": "refertur.net@gmail.com",
+    "url": "https://homgorn.github.io",
+    "jobTitle": "Web Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    },
+    "areaServed": "RU",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+77054384888",
+      "contactType": "customer service",
+      "availableLanguage": "English"
+    }
+  }
+  </script>
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/en/" class="logo">Leinid <span>D</span></a>
+      <nav class="nav">
+        <a href="/en/">Home</a>
+        <a href="/en/services.html">Services</a>
+        <a href="https://wa.me/77054384888">Contacts</a>
+        <a href="{{ page.url_ru }}" class="lang-link">RU</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Leinid D. All rights reserved.</p>
+      <p>WhatsApp: +7 705 438 4888 | Email: refertur.net@gmail.com</p>
+    </div>
+  </footer>
+</body>
+</html>

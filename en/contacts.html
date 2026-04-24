@@ -1,63 +1,70 @@
----
-layout: english
-title: Contacts | Leinid D
-description: Contact information. WhatsApp, Telegram, Email. Web developer Leinid D.
-keywords: contacts, WhatsApp, Telegram
-author: Leinid D
-lang: en
-url: /en/contacts.html
-url_ru: /contacts.html
-og_locale: en_US
-job_title: Web Developer
-contact_lang: English
-nav_home: Home
-nav_services: Services
-nav_contacts: Contacts
-footer_rights: All rights reserved.
----
-
-<div class="container">
-  <section class="page-title">
-    <h1>Contacts</h1>
-    <p>Contact me in a convenient way</p>
-  </section>
-
-  <div class="filters">
-    <a href="/en/services.html">← All services</a>
-    <a href="/en/">Home</a>
-    <a href="/en/about.html">About</a>
-  </div>
-
-  <section class="contacts-content">
-    <div class="contact-card">
-      <h2>Contact Me</h2>
-      <p>Choose a convenient way to connect:</p>
-      
-      <div class="contact-options">
-        <a href="https://wa.me/77054384888" class="contact-item">
-          <h3>WhatsApp</h3>
-          <p>+7 705 438 4888</p>
-        </a>
-        <a href="https://t.me/notview" class="contact-item">
-          <h3>Telegram</h3>
-          <p>@notview</p>
-        </a>
-        <a href="mailto:refertur.net@gmail.com" class="contact-item">
-          <h3>Email</h3>
-          <p>refertur.net@gmail.com</p>
-        </a>
-      </div>
-
-      <div class="contact-form">
-        <h3>Or leave a request</h3>
-        <form action="https://formspree.io/f/xpwzgvqg" method="POST">
-          <input type="text" name="name" placeholder="Your name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="tel" name="phone" placeholder="Phone">
-          <textarea name="message" placeholder="Message or question" rows="5" required></textarea>
-          <button type="submit" class="btn">Send</button>
-        </form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts | Leinid D</title>
+  <meta name="description" content="Contact information. WhatsApp, Telegram, Email. Web developer Leinid D.">
+  <meta name="keywords" content="contacts, WhatsApp, Telegram">
+  <meta name="author" content="Leinid D">
+  
+  <link rel="alternate" hreflang="en" href="https://homgorn.github.io/en/contacts.html">
+  <link rel="alternate" hreflang="ru" href="https://homgorn.github.io/contacts.html">
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/en/" class="logo">Leinid <span>D</span></a>
+        <nav class="nav">
+          <a href="/en/">Home</a>
+          <a href="/en/services.html">Services</a>
+          <a href="/en/blog/">Blog</a>
+          <a href="/en/contacts.html" class="active">Contacts</a>
+          <a href="/">RU</a>
+        </nav>
       </div>
     </div>
-  </section>
-</div>
+  </header>
+
+  <div class="container">
+    <section class="page-title">
+      <h1>Contacts</h1>
+      <p>Contact me in a convenient way</p>
+      <p><small><a href="/contacts.html">Russian version</a></small></p>
+    </section>
+
+    <section class="services-grid">
+      <article class="service-card">
+        <h3>WhatsApp</h3>
+        <p>Quick answers to all questions. Send a message anytime.</p>
+        <span class="price">+7 705 438 4888</span>
+        <a href="https://wa.me/77054384888?text=Hello!+I+am+interested+in+your+web+development+services+for+GitHub+Pages" class="order-btn">Write</a>
+      </article>
+      <article class="service-card">
+        <h3>Telegram</h3>
+        <p>Convenient messenger for discussing projects. Reply within a day.</p>
+        <span class="price">@notview</span>
+        <a href="https://t.me/notview?text=Hello!+I+am+interested+in+your+web+development+services+for+GitHub+Pages" class="order-btn">Write</a>
+      </article>
+      <article class="service-card">
+        <h3>Email</h3>
+        <p>For official requests and documents. Reply within 24 hours.</p>
+        <span class="price">refertur.net@gmail.com</span>
+        <a href="mailto:refertur.net@gmail.com?subject=Inquiry+from+homgorn.github.io&body=Hello!%0A%0AI+am+interested+in+your+web+development+services+for+GitHub+Pages.%0A%0A" class="order-btn">Write</a>
+      </article>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Leinid D. All rights reserved.</p>
+      <p>WhatsApp: <a href="https://wa.me/77054384888?text=Hello!+I+am+interested+in+your+web+development+services+for+GitHub+Pages">+7 705 438 4888</a></p>
+      <p>Email: <a href="mailto:refertur.net@gmail.com?subject=Inquiry+from+homgorn.github.io&body=Hello!%0A%0AI+am+interested+in+your+web+development+services+for+GitHub+Pages.%0A%0A">refertur.net@gmail.com</a></p>
+      <p>Telegram: <a href="https://t.me/notview?text=Hello!+I+am+interested+in+your+web+development+services+for+GitHub+Pages">@notview</a></p>
+    </div>
+  </footer>
+</body>
+</html>

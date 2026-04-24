@@ -1,57 +1,70 @@
----
-layout: default
-title: Контакты | Leinid D
-description: Контакты для связи. WhatsApp, Telegram, Email. Веб-разработчик Leinid D.
-keywords: контакты, связаться, WhatsApp, Telegram
-author: Leinid D
-lang: ru
-url: /contacts.html
-url_en: /en/contacts.html
----
-
-<div class="container">
-  <section class="page-title">
-    <h1>Контакты</h1>
-    <p>Свяжитесь со мной удобным способом</p>
-    <p><small><a href="/en/contacts.html">English version</a></small></p>
-  </section>
-
-  <div class="filters">
-    <a href="/services.html">← Все услуги</a>
-    <a href="/">Главная</a>
-    <a href="/about.html">Обо мне</a>
-  </div>
-
-  <section class="contacts-content">
-    <div class="contact-card">
-      <h2>Свяжитесь со мной</h2>
-      <p>Выберите удобный способ связи:</p>
-      
-      <div class="contact-options">
-        <a href="https://wa.me/77054384888" class="contact-item">
-          <h3>WhatsApp</h3>
-          <p>+7 705 438 4888</p>
-        </a>
-        <a href="https://t.me/notview" class="contact-item">
-          <h3>Telegram</h3>
-          <p>@notview</p>
-        </a>
-        <a href="mailto:refertur.net@gmail.com" class="contact-item">
-          <h3>Email</h3>
-          <p>refertur.net@gmail.com</p>
-        </a>
-      </div>
-
-      <div class="contact-form">
-        <h3>Или оставьте заявку</h3>
-        <form action="https://formspree.io/f/xpwzgvqg" method="POST">
-          <input type="text" name="name" placeholder="Ваше имя" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="tel" name="phone" placeholder="Телефон">
-          <textarea name="message" placeholder="Сообщение или вопрос" rows="5" required></textarea>
-          <button type="submit" class="btn">Отправить</button>
-        </form>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты | Leinid D</title>
+  <meta name="description" content="Контакты для связи. WhatsApp, Telegram, Email. Веб-разработчик Leinid D.">
+  <meta name="keywords" content="контакты, связаться, WhatsApp, Telegram">
+  <meta name="author" content="Leinid D">
+  
+  <link rel="alternate" hreflang="ru" href="https://homgorn.github.io/contacts.html">
+  <link rel="alternate" hreflang="en" href="https://homgorn.github.io/en/contacts.html">
+  
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo">Leinid <span>D</span></a>
+        <nav class="nav">
+          <a href="/">Главная</a>
+          <a href="/services.html">Услуги</a>
+          <a href="/blog/">Блог</a>
+          <a href="/contacts.html" class="active">Контакты</a>
+          <a href="/en/">EN</a>
+        </nav>
       </div>
     </div>
-  </section>
-</div>
+  </header>
+
+  <div class="container">
+    <section class="page-title">
+      <h1>Контакты</h1>
+      <p>Свяжитесь со мной удобным способом</p>
+      <p><small><a href="/en/contacts.html">English version</a></small></p>
+    </section>
+
+    <section class="services-grid">
+      <article class="service-card">
+        <h3>WhatsApp</h3>
+        <p>Быстрые ответы на все вопросы. Отправляйте сообщение в любое время.</p>
+        <span class="price">+7 705 438 4888</span>
+        <a href="https://wa.me/77054384888?text=Здравствуйте!+Интересует+консультация+по+веб-разработке+на+GitHub+Pages" class="order-btn">Написать</a>
+      </article>
+      <article class="service-card">
+        <h3>Telegram</h3>
+        <p>Удобный мессенджер для обсуждения проектов. Ответ в течение дня.</p>
+        <span class="price">@notview</span>
+        <a href="https://t.me/notview?text=Здравствуйте!+Интересует+консультация+по+веб-разработке+на+GitHub+Pages" class="order-btn">Написать</a>
+      </article>
+      <article class="service-card">
+        <h3>Email</h3>
+        <p>Для официальных запросов и документов. Ответим в течение 24 часов.</p>
+        <span class="price">refertur.net@gmail.com</span>
+        <a href="mailto:refertur.net@gmail.com?subject=Заявка+с+сайта+homgorn.github.io&body=Здравствуйте!%0A%0AИнтересует+консультация+по+веб-разработке+на+GitHub+Pages.%0A%0A" class="order-btn">Написать</a>
+      </article>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Leinid D. Все права защищены.</p>
+      <p>WhatsApp: <a href="https://wa.me/77054384888?text=Здравствуйте!+Интересует+консультация+по+веб-разработке+на+GitHub+Pages">+7 705 438 4888</a></p>
+      <p>Email: <a href="mailto:refertur.net@gmail.com?subject=Заявка+с+сайта+homgorn.github.io&body=Здравствуйте!%0A%0AИнтересует+кон��ультация+по+веб-разработке+на+GitHub+Pages.%0A%0A">refertur.net@gmail.com</a></p>
+      <p>Telegram: <a href="https://t.me/notview?text=Здравствуйте!+Интересует+консультация+по+веб-разработке+на+GitHub+Pages">@notview</a></p>
+    </div>
+  </footer>
+</body>
+</html>

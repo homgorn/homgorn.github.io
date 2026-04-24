@@ -32,6 +32,27 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://homgorn.github.io/en/contacts.html"/>
   </url>
   <url>
+    <loc>https://homgorn.github.io/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://homgorn.github.io/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homgorn.github.io/en/contacts.html"/>
+  </url>
+  <url>
+    <loc>https://homgorn.github.io/category/security.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://homgorn.github.io/category/security.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homgorn.github.io/en/category/security-protection.html"/>
+  </url>
+  <url>
+    <loc>https://homgorn.github.io/category/content-copywriting.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://homgorn.github.io/category/content-copywriting.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://homgorn.github.io/en/category/content-creation.html"/>
+  </url>
+  <url>
     <loc>https://homgorn.github.io/sitemap.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

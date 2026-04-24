@@ -1,7 +1,7 @@
 ---
 layout: default
 title: AI и нейросети | Гончаров М.
-description: Интеграция нейросетей ChatGPT, Claude, Gemini. Разработка Telegram-ботов с ИИ, генерация контента и видео. Заказать через Telegram @notview
+description: Интеграция ChatGPT, Claude, Gemini. Разработка Telegram-ботов с ИИ, генерация контента и видео.
 ---
 
 <div class="page-header">
@@ -10,19 +10,27 @@ description: Интеграция нейросетей ChatGPT, Claude, Gemini. 
 </div>
 
 <div class="filters">
-  <a href="/services/">← Все услуги</a>
+  <a href="/services.html">← Все услуги</a>
 </div>
 
-<div class="services-grid">
-  {% for service in site.services %}
-    {% if service.category == "ai-services" %}
-    <article class="service-card">
-      <h2><a href="{{ service.url }}">{{ service.title }}</a></h2>
-      <p>{{ service.description }}</p>
-      {% if service.price %}
-      <span class="price">от {{ service.price }} ₽</span>
-      {% endif %}
-    </article>
-    {% endif %}
-  {% endfor %}
+<div class="services-list">
+  <h2>Интеграция нейросетей</h2>
+  <p>Подключение ChatGPT, Claude, Gemini на сайты и в боты.</p>
+  <p class="price">от 15 000 ₽</p>
+
+  <h2>AI-копирайтинг</h2>
+  <p>Генерация уникальных текстов нейросетями.</p>
+  <p class="price">от 100 ₽/1000 знаков</p>
+
+  <h2>Telegram-боты с ИИ</h2>
+  <p>Умные боты с контекстной памятью.</p>
+  <p class="price">от 15 000 ₽</p>
+
+  <h2>Генерация видео</h2>
+  <p>Создание видео нейросетями VEO, Sora, Seedance.</p>
+  <p class="price">от 5 000 ₽</p>
 </div>
+
+<section class="cta">
+  <a href="https://t.me/notview" class="btn">Написать в Telegram</a>
+</section>

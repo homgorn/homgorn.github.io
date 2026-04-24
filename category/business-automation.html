@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Автоматизация бизнеса | Гончаров М.
-description: Автоматизация бизнес-процессов на n8n, Make, Zapier. Интеграция сервисов, снижение ручного труда. Заказать через Telegram @notview
+title: Автоматизация | Гончаров М.
+description: Автоматизация бизнес-процессов на n8n, Make, Zapier. Интеграция сервисов.
 ---
 
 <div class="page-header">
@@ -10,19 +10,19 @@ description: Автоматизация бизнес-процессов на n8n
 </div>
 
 <div class="filters">
-  <a href="/services/">← Все услуги</a>
+  <a href="/services.html">← Все услуги</a>
 </div>
 
-<div class="services-grid">
-  {% for service in site.services %}
-    {% if service.category == "business-automation" %}
-    <article class="service-card">
-      <h2><a href="{{ service.url }}">{{ service.title }}</a></h2>
-      <p>{{ service.description }}</p>
-      {% if service.price %}
-      <span class="price">от {{ service.price }} ₽</span>
-      {% endif %}
-    </article>
-    {% endif %}
-  {% endfor %}
+<div class="services-list">
+  <h2>Автоматизация процессов</h2>
+  <p>Настройка n8n, Make, Zapier для автоматизации.</p>
+  <p class="price">от 10 000 ₽</p>
+
+  <h2>Парсинг данных</h2>
+  <p>Сбор данных с любых сайтов и маркетплейсов.</p>
+  <p class="price">от 5 000 ₽</p>
 </div>
+
+<section class="cta">
+  <a href="https://t.me/notview" class="btn">Написать в Telegram</a>
+</section>

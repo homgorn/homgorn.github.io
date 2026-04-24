@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Веб-разработка | Гончаров М.
-description: Услуги веб-разработки на WordPress, создание интернет-магазинов, лендингов, агрегаторов. Опыт 10+ лет. Заказать через Telegram @notview
+description: Услуги веб-разработки на WordPress, создание интернет-магазинов, лендингов. Опыт 10+ лет.
 ---
 
 <div class="page-header">
@@ -10,19 +10,40 @@ description: Услуги веб-разработки на WordPress, созда
 </div>
 
 <div class="filters">
-  <a href="/services/">← Все услуги</a>
+  <a href="/services.html">← Все услуги</a>
 </div>
 
-<div class="services-grid">
-  {% for service in site.services %}
-    {% if service.category == "web-development" %}
-    <article class="service-card">
-      <h2><a href="{{ service.url }}">{{ service.title }}</a></h2>
-      <p>{{ service.description }}</p>
-      {% if service.price %}
-      <span class="price">от {{ service.price }} ₽</span>
-      {% endif %}
-    </article>
-    {% endif %}
-  {% endfor %}
+<div class="services-list">
+  <h2>Разработка на WordPress</h2>
+  <p>Профессиональная разработка сайтов на WordPress. Создание интернет-магазинов, корпоративных сайтов, лендингов.</p>
+  <p class="price">от 15 000 ₽</p>
+
+  <h2>Интернет-магазин WooCommerce</h2>
+  <p>Полноценные интернет-магазины на WooCommerce с каталогом, корзиной, оформлением заказа.</p>
+  <p class="price">от 25 000 ₽</p>
+
+  <h2>Лендинг</h2>
+  <p>Продающие страницы с высокой конверсией.</p>
+  <p class="price">от 15 000 ₽</p>
+
+  <h2>Агрегаторы и каталоги</h2>
+  <p>Каталоги с фильтрами, поиском, сравнением товаров.</p>
+  <p class="price">от 30 000 ₽</p>
+
+  <h2>Миграция на WordPress</h2>
+  <p>Перенос сайта с сохранением позиций.</p>
+  <p class="price">от 15 000 ₽</p>
+
+  <h2>Редизайн сайта</h2>
+  <p>Обновление дизайна без потери трафика.</p>
+  <p class="price">от 20 000 ₽</p>
+
+  <h2>Поддержка сайтов</h2>
+  <p>Техническое обслуживание, обновления, безопасность.</p>
+  <p class="price">от 5 000 ₽/месяц</p>
 </div>
+
+<section class="cta">
+  <h2>Заказать услугу</h2>
+  <a href="https://t.me/notview" class="btn">Написать в Telegram</a>
+</section>

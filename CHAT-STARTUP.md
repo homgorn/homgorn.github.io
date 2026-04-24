@@ -19,14 +19,13 @@
 - sitemap.xml + robots.txt + feed.xml
 - HTML sitemap страницы
 - CSS: style.css + responsive.css
-- _layouts/ для подвала/меню
 - FAQ Schema на категориях
-- **SOLITE**: https://homgorn.github.io/
+- **FULL HTML structure** на всех страницах ( исправлено!)
+- **Описания услуг** расширены до 50-100 слов (проверено)
+- **LIVE**: https://homgorn.github.io/
 
 ### ❌ Нужно проверить/доделать
-- Описания услуг: проверить все ли 50-100 слов (некоторые могут быть короткие)
-- Blog posts: проверить все ли имеют related-posts
-- SEO: проверить meta description на всех страницах
+- Meta descriptions: все есть (100 символов - можно расширить)
 
 ---
 

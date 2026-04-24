@@ -1,0 +1,54 @@
+# Pages CMS Configuration for homgorn.github.io
+
+media: media
+content:
+  - name: services
+    label: Услуги
+    type: collection
+    path: _services
+    fields:
+      - name: title
+        type: string
+        label: Название
+      - name: description
+        type: string
+        label: Краткое описание
+      - name: categories
+        type: select
+        label: Категория
+        options:
+          - web-development
+          - seo-optimization
+          - ai-services
+          - content-copywriting
+          - business-automation
+          - marketing-advertising
+          - import-export
+          - security
+      - name: tags
+        type: multiselect
+        label: Метки
+        options:
+          - wordpress
+          - woocommerce
+          - telegram
+          - seo
+          - ai
+          - chatgpt
+          - automation
+      - name: price
+        type: number
+        label: Цена от
+      - name: body
+        type: rich-text
+        label: Описание
+
+settings:
+  name: homgorn
+  navigation:
+    - label: Услуги
+      path: /services/
+    - label: Обо мне
+      path: /about/
+    - label: Контакты
+      path: /contact/

@@ -1,0 +1,28 @@
+---
+layout: default
+title: SEO-продвижение | Гончаров М.
+description: Услуги SEO-продвижения, технического аудита, линкбилдинга. Вывод сайтов в топ Яндекса и Google. Заказать через Telegram @notview
+---
+
+<div class="page-header">
+  <h1>SEO-продвижение</h1>
+  <p>Продвижение, аудит, линкбилдинг</p>
+</div>
+
+<div class="filters">
+  <a href="/services/">← Все услуги</a>
+</div>
+
+<div class="services-grid">
+  {% for service in site.services %}
+    {% if service.category == "seo-optimization" %}
+    <article class="service-card">
+      <h2><a href="{{ service.url }}">{{ service.title }}</a></h2>
+      <p>{{ service.description }}</p>
+      {% if service.price %}
+      <span class="price">от {{ service.price }} ₽</span>
+      {% endif %}
+    </article>
+    {% endif %}
+  {% endfor %}
+</div>

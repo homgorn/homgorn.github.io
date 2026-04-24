@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+vendor/
+.bundle/
+
+# Build
+_site/
+.sass-cache/
+.jekyll-cache/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jekyll
+*.log
+*~
+
+# Python
+__pycache__/
+*.pyc
+
+# Gem
+Gemfile.lock

@@ -1,0 +1,40 @@
+title: Услуги веб-разработки и продвижения | Гончаров М.
+description: Профессиональные услуги веб-разработки, SEO-продвижения, интеграции нейросетей и автоматизации бизнеса. Опыт 10+ лет.
+url: https://homgorn.github.io
+author:
+  name: Михаил Гончаров
+  email: notview@protonmail.com
+
+timezone: Europe/Moscow
+markdown: kramdown
+kramdown:
+  input: GFM
+
+collections:
+  services:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: page
+    values:
+      layout: default
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - LICENSE
+  - .gitignore
+
+permalink: pretty
+
+sass:
+  style: compressed
+
+liquid:
+  error_mode: warn

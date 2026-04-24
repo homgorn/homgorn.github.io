@@ -1,0 +1,28 @@
+---
+layout: default
+title: Автоматизация бизнеса | Гончаров М.
+description: Автоматизация бизнес-процессов на n8n, Make, Zapier. Интеграция сервисов, снижение ручного труда. Заказать через Telegram @notview
+---
+
+<div class="page-header">
+  <h1>Автоматизация бизнеса</h1>
+  <p>n8n, Make, интеграции</p>
+</div>
+
+<div class="filters">
+  <a href="/services/">← Все услуги</a>
+</div>
+
+<div class="services-grid">
+  {% for service in site.services %}
+    {% if service.category == "business-automation" %}
+    <article class="service-card">
+      <h2><a href="{{ service.url }}">{{ service.title }}</a></h2>
+      <p>{{ service.description }}</p>
+      {% if service.price %}
+      <span class="price">от {{ service.price }} ₽</span>
+      {% endif %}
+    </article>
+    {% endif %}
+  {% endfor %}
+</div>

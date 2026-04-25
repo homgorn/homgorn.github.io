@@ -424,20 +424,20 @@ body::before {
   color: white !important;
   padding: 0.75rem 1.5rem;
   border-radius: var(--radius-sm);
-  text-decoration: none;
+  text-decoration: none !important;
   font-weight: 600;
   font-size: 0.9375rem;
   text-align: center;
   margin-top: 1rem;
   transition: var(--transition);
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .service-card .order-btn:hover {
   background: var(--primary-dark) !important;
   transform: translateY(-2px);
-}
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
 }
 
 /* CTA Section */

@@ -364,6 +364,7 @@ body::before {
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
   opacity: 0;
   transition: var(--transition);
+  pointer-events: none;
 }
 
 .service-card::after {
@@ -376,6 +377,7 @@ body::before {
   background: linear-gradient(var(--primary), var(--secondary), var(--accent-secondary));
   opacity: 0;
   transition: var(--transition);
+  pointer-events: none;
 }
 
 .service-card:hover {
